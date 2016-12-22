@@ -29,5 +29,8 @@
     {% if app.badTags|length != 0 %}
     {{ errors_or_warnings_table(app.badTags) }}
     {% endif %}
+    <h2>{% trans %}OSM-Wikidata Validation tool{% endtrans %}</h2>
+    <p>{% trans %}You could also check the the <a href="https://osmlab.github.io/wikidata-osm" target="_blank">OSM-Wikidata Validation</a> tool,
+     it show how far are the Wikipedia and OpenStreetMap coordinates for a element connected by <em>wikimedia or wikidata tag</em>{% endtrans %}</p>
     </div>
 {% endblock %}
